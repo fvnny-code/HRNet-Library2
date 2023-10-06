@@ -36,6 +36,7 @@
   border-radius: 3px;
   margin-right: 0.5rem;
   width: 20px;
+  color: black;
   background: none;
 }
 .closeMoutton:hover {
@@ -43,6 +44,7 @@
 }
 .content {
   padding: 10px;
+  color: black;
   text-align: center;
   max-height: 30rem;
   overflow-x: hidden;
