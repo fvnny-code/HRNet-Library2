@@ -30,9 +30,7 @@ export const Modal: FunctionComponent<ModalProps> = ({
     };
   }, [isShown]);
   const modal = (
-    
-    <div className="backdrop" onClick={onHide}>
-    
+    <div data-testid="displayModal" className="backdrop" onClick={onHide}>
       <div
         className="wrapper"
         aria-modal
@@ -43,6 +41,7 @@ export const Modal: FunctionComponent<ModalProps> = ({
         <div className="styledModal">
           <header className="header-modal">
             <button
+              data-testid="closeButton"
               aria-label="Close"
               type="button"
               className="closeButton"

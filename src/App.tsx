@@ -13,6 +13,7 @@ export default function App(){
         isShown={isShown}
         onHide={toggle}
         message={"Message whatever !"}
+        
         />
         </>
     )
