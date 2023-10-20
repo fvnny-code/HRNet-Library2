@@ -29,7 +29,7 @@ export const ModalStory: Story = {
   },
 };
 
-const Template = (args: any) => {
+const Template = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <div>
