@@ -20,9 +20,15 @@ If you are developing an application :
 
 - In the render part, import the modal like in the above example :
 ```js
-   <Modal
+   return (
+    <>
+      <h2>CREATE A NEW EMPLOYEE</h2>
+      <form onSubmit={handleSubmit}>...</form>
+      <Modal
         isShown={isShown}
         onHide={toggle}
         message={"Employee " + firstName + " " + lastName + " created !"}
       />
+    </>
+  );
 ```
