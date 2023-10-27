@@ -1,27 +1,28 @@
 # HRNET : modal component library
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This template provides a modal component library for any react application
+of your choice.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installing the library in you application
 
-## Expanding the ESLint configuration
+If you are developing an application :
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- To install the HRNet-Library at the root of the application, run 
+   > npm i hrnet-library2
 
-- Configure the top-level `parserOptions` property like this:
+- To import the modal component in you application, import it at the root of the chosen page :
 
 ```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+   import { Modal } from "hrnet-library2";
+   import { useModal } from "hrnet-library2";
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- In the render part, import the modal like in the above example :
+```js
+   <Modal
+        isShown={isShown}
+        onHide={toggle}
+        message={"Employee " + firstName + " " + lastName + " created !"}
+      />
+```
