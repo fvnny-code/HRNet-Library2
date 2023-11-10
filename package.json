@@ -3,7 +3,7 @@
   "jest": {
     "verbose": true
   },
-  "version": "0.0.1",
+  "version": "0.0.3",
   "type": "module",
   "main": "dist/hrnet-library2.js",
   "types": "dist/main.d.ts",

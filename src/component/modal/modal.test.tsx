@@ -1,5 +1,5 @@
 import { render, fireEvent } from "@testing-library/react";
-import { vi } from "vitest";
+import { vi, describe, test } from "vitest";
 import { Modal } from "./Modal";
 
 describe("<Modal/>", () => {
